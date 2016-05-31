@@ -21,6 +21,10 @@ class ConversationsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func onBackBtnPressed(sender: AnyObject) {
+        print("back btn in conversations pressed")
+        self.navigationController!.popViewControllerAnimated(true)
+    }
     /*
     // MARK: - Navigation
 

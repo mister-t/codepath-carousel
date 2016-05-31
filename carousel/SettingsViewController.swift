@@ -16,12 +16,13 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        scrollView.contentSize = settingsImageView.image!.size
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-                scrollView.contentSize = settingsImageView.image!.size
     }
     
     @IBAction func onCloseBtnPressed(sender: AnyObject) {
